@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
             autoplay: true,
             autoplaySpeed: 0,
             speed: 5000,
-            slidesToShow: 5,
+            slidesToShow: 5.5,
             slidesToScroll: 1,
             prevArrow: $('.slick-prev-custom'),
             nextArrow: $('.slick-next-custom'),

@@ -1,6 +1,118 @@
-@import url('https://fonts.cdnfonts.com/css/mona-sans');
-
 /* ==========================================================================
+   MONA SANS CONDENSED — Local Font Family (All Weights)
+   ========================================================================== */
+@import url('https://fonts.cdnfonts.com/css/childsplay');
+
+
+/* Mona Sans Condensed local @font-face definitions */
+@font-face {
+    font-family: 'Mona Sans Condensed';
+    src: url('../fonts/MonaSans_Condensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans Condensed';
+    src: url('../fonts/MonaSans_Condensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans Condensed';
+    src: url('../fonts/MonaSans_Condensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans Condensed';
+    src: url('../fonts/MonaSans_Condensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans Condensed';
+    src: url('../fonts/MonaSans_Condensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans Condensed';
+    src: url('../fonts/MonaSans_Condensed-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans Condensed';
+    src: url('../fonts/MonaSans_Condensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Mona Sans local @font-face definitions */
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../fonts/MonaSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../fonts/MonaSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../fonts/MonaSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../fonts/MonaSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../fonts/MonaSans-ExtraBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../fonts/MonaSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../fonts/MonaSans-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Daily Flashback local @font-face definitions */
+@font-face {
+    font-family: 'Daily Flashback';
+    src: url('../fonts/DailyFlashback-Regular Demo.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ==========================================================================================
    UpRank Premium CSS Design System
    Modern dark-navy, high-contrast, glassmorphic trade marketing landing page
    ========================================================================== */
@@ -23,9 +135,9 @@
     --color-shadow-glow: rgba(37, 99, 235, 0.15);
 
     /* Fonts */
-    --font-primary: 'Poppins', sans-serif;
+    --font-primary: 'Mona Sans Condensed';
     --font-accent: 'Playfair Display', serif;
-    --font-handwriting: 'Caveat', cursive;
+    --font-handwriting: 'Childsplay', 'Caveat', cursive;
 
     /* Spacing & Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -45,7 +157,6 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    background-color: var(--color-bg-deep);
     color: var(--color-text-white);
     font-family: var(--font-primary);
     overflow-x: hidden;
@@ -56,6 +167,7 @@ body {
     overflow-x: hidden;
     position: relative;
     line-height: 1.6;
+    font-family: 'Mona Sans';
     -webkit-font-smoothing: antialiased;
 }
 
@@ -124,7 +236,7 @@ input {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 15px;
     position: relative;
     z-index: 1;
 }
@@ -177,7 +289,7 @@ input {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 32px;
+    padding: 7px 20px;
     border-radius: var(--border-radius-pill);
     font-weight: 600;
     font-size: 0.95rem;
@@ -202,12 +314,14 @@ input {
 
 
 .btn-hero-cta {
-    background: rgba(2, 8, 23, 0.6);
+    background: linear-gradient(rgba(5, 11, 44, 0.75), rgba(5, 11, 44, 0.75)) padding-box,
+        radial-gradient(93.66% 1151.97% at 6.71% 9.17%, #001681 0%, #3355FC 28.85%, #5270FF 55.77%, #3355FC 79.81%, #002BFB 100%) border-box;
     color: var(--color-text-white);
-    border: 2px solid var(--color-primary);
-    box-shadow: 0 0 20px var(--color-shadow-glow);
-    padding: 18px 36px;
+    border: 3px solid transparent;
+    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.15), 0 0 24px rgba(37, 99, 235, 0.15);
+    padding: 10px 10px 10px 28px;
     gap: 16px;
+    justify-content: space-between;
 }
 
 .btn-hero-cta::before {
@@ -217,16 +331,15 @@ input {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
-    opacity: 0;
+    background: #020616;
+    opacity: 1;
     z-index: 1;
     transition: var(--transition-smooth);
 }
 
 .btn-hero-cta:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 0 30px rgba(37, 99, 235, 0.5);
-    border-color: var(--color-primary-light);
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5), 0 0 32px rgba(37, 99, 235, 0.3);
 }
 
 .btn-hero-cta:hover::before {
@@ -238,11 +351,38 @@ input {
     z-index: 2;
 }
 
+/* Button text typography */
+.btn-text {
+    font-family: 'Mona Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+/* User photo image inside button */
 .btn-avatars {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
+.btn-users-img {
+    height: 44px;
+    width: auto;
+    display: block;
+    border-radius: 40px;
+    object-fit: cover;
+    transition: var(--transition-fast);
+}
+
+.btn-hero-cta:hover .btn-users-img {
+    transform: scale(1.05);
+}
+
+/* Legacy avatar styles (kept for compatibility) */
 .avatar {
     width: 28px;
     height: 28px;
@@ -270,11 +410,11 @@ input {
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px;
+    height: 72px;
     z-index: 1000;
     display: flex;
     align-items: center;
-    background: rgba(5, 11, 44, 0.6);
+    background: #0D1227;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -292,7 +432,7 @@ input {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -540,37 +680,41 @@ input {
    5. HERO SECTION
    ========================================================================== */
 .hero-section {
-    min-height: 100vh;
-    background: linear-gradient(135deg, var(--color-bg-deep), var(--color-bg-navy), var(--color-bg-lightnavy));
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    background: #070C21;
+
 }
 
+/* Single-column — image is taken out of flow (absolute) */
 .hero-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 60px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
+    padding-top: 90px;
 }
+
 
 /* HERO LEFT COLUMN */
 .hero-left-column {
     position: relative;
     z-index: 5;
+    max-width: 680px;
+    padding-bottom: 200px;
 }
 
 .hero-heading {
-    font-size: clamp(2.5rem, 5.5vw, 4.8rem);
-    font-weight: 800;
-    line-height: 1.05;
+    font-family: 'Youth', 'Poppins', sans-serif;
+    font-size: 76px;
+    font-weight: 500;
+    line-height: 1;
     color: var(--color-text-white);
-    letter-spacing: -2px;
-    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
 }
@@ -584,7 +728,7 @@ input {
     font-style: italic;
     color: var(--color-accent);
     font-weight: 600;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.02em;
     padding: 4px 0;
 }
 
@@ -597,41 +741,50 @@ input {
     line-height: 1.6;
 }
 
-/* CTA & Handwriting Arrow */
+/* CTA & Arrow / Handwritten Accent */
 .hero-cta-wrapper {
     display: flex;
     align-items: center;
-    gap: 40px;
-    margin-bottom: 60px;
+    gap: 32px;
+    margin-bottom: 56px;
     position: relative;
 }
 
 .handwritten-accent {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 14px;
     position: relative;
 }
 
+/* Arrow image */
+.arrow-img {
+    width: 64px;
+    height: auto;
+    display: block;
+    opacity: 0.85;
+    margin-bottom: 4px;
+}
+
+/* Legacy SVG arrow */
 .curved-arrow {
     transform: scaleX(-1) rotate(15deg);
     opacity: 0.8;
 }
 
+/* Handwritten accent text — Childsplay font */
 .handwritten-text {
-    font-family: var(--font-handwriting);
-    font-size: 1.8rem;
+    font-family: 'Childsplay', 'Caveat', cursive;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0;
     color: var(--color-text-white);
     white-space: nowrap;
-    transform: rotate(-3deg);
     display: inline-block;
 }
 
-/* Partner Logos */
-.partner-logos-container {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding-top: 32px;
-}
 
 .partner-title {
     font-size: 0.75rem;
@@ -648,65 +801,62 @@ input {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     align-items: center;
+    width: 550px;
 }
 
 .partner-logo {
     color: var(--color-text-gray);
-    opacity: 0.4;
     transition: var(--transition-smooth);
     display: flex;
     align-items: center;
 }
 
-.partner-logo:hover {
-    opacity: 0.9;
-    color: var(--color-text-white);
-    transform: translateY(-2px);
+
+.partner-img {
+    height: 36px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
-.partner-svg {
-    height: 24px;
-    width: 100%;
-}
-
-/* HERO RIGHT COLUMN (3D CARDS GRID) */
+/* HERO RIGHT COLUMN — absolutely positioned, touches top & right edges */
 .hero-right-column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    z-index: 2;
-    perspective: 1200px;
-}
-
-.cards-3d-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    transform-style: preserve-3d;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 100%;
-    max-width: 580px;
-}
-
-.card-column {
+    max-width: 800px;
+    z-index: 2;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    pointer-events: none;
 }
 
-.card-column.col-1 {
-    transform: translateY(20px);
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    pointer-events: auto;
 }
 
-.card-column.col-2 {
-    transform: translateY(-20px);
+
+.floating-hero-image {
+    display: block;
+    /* Slightly wider than column so it bleeds right */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: top right;
+    position: relative;
+    z-index: 2;
+
 }
 
-.card-column.col-3 {
-    transform: translateY(40px);
-}
+
 
 /* Floating Animation & Styles for Cards */
 .hero-card {
@@ -717,66 +867,10 @@ input {
     justify-content: space-between;
     min-height: 140px;
     position: relative;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
-/* Floating keyframe logic applied staggered */
-.floating-card {
-    animation: floating 6s ease-in-out infinite;
-}
-
-.delay-1 {
-    animation-delay: 0.1s;
-}
-
-.delay-2 {
-    animation-delay: 0.8s;
-}
-
-.delay-3 {
-    animation-delay: 1.5s;
-}
-
-.delay-4 {
-    animation-delay: 0.4s;
-}
-
-.delay-5 {
-    animation-delay: 1.1s;
-}
-
-.delay-6 {
-    animation-delay: 1.8s;
-}
-
-.delay-7 {
-    animation-delay: 0.6s;
-}
-
-.delay-8 {
-    animation-delay: 1.3s;
-}
-
-.delay-9 {
-    animation-delay: 2.0s;
-}
-
-@keyframes floating {
-    0% {
-        transform: translateY(0) rotate(var(--rotation));
-    }
-
-    50% {
-        transform: translateY(var(--drift-y)) rotate(var(--rotation));
-    }
-
-    100% {
-        transform: translateY(0) rotate(var(--rotation));
-    }
-}
 
 /* Card Themes */
 .card-blue {
@@ -1785,9 +1879,7 @@ input {
 
 /* Up to 1100px (Desktop adjustments) */
 @media (max-width: 1100px) {
-    .section-container {
-        padding: 0 30px;
-    }
+
 
     .hero-grid {
         gap: 40px;
@@ -1933,9 +2025,7 @@ input {
 
 /* Up to 576px (Mobile Phones) */
 @media (max-width: 576px) {
-    .section-container {
-        padding: 0 20px;
-    }
+
 
     .logo-text {
         font-size: 1.3rem;
@@ -2020,12 +2110,12 @@ input {
    ========================================================================== */
 .success-stories-section {
     width: 100%;
-    background-color: #ffffff;
-    padding: 80px 0;
+    padding: 0 0 0;
     color: #111827;
     font-family: 'Mona Sans', sans-serif;
     position: relative;
     overflow: hidden;
+    margin-top: -80px;
 }
 
 .stories-container {
@@ -2112,23 +2202,20 @@ input {
 
 .stories-slider {
     margin: 0 -10px;
-    /* offset the card padding */
 }
 
 .stories-slider .slick-slide {
-    padding: 15px 10px 25px 10px;
-    /* add top/bottom padding to avoid hover clip */
+    margin: 0 10px;
 }
 
 /* Card Design */
 .testimonial-card {
     width: 260px;
-    height: 420px;
+    height: 400px !important;
     border-radius: 22px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     background-color: #f3f4f6;
     outline: none;
@@ -2147,82 +2234,80 @@ input {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg,
-            rgba(0, 0, 0, 0.15) 0%,
-            rgba(0, 0, 0, 0.35) 45%,
-            rgba(0, 0, 0, 0.85) 100%);
     z-index: 1;
     pointer-events: none;
+    height: 94px;
+    background: linear-gradient(180deg, rgba(5, 8, 24, 0.8) 0%, rgba(5, 8, 24, 0) 100%);
 }
 
-/* Top Glass Header */
+/* Top Header */
 .card-glass-header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 90px;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    background: rgba(255, 255, 255, 0.12);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 22px 24px;
+    gap: 5px;
+    background: linear-gradient(180deg, rgba(5, 8, 24, 0.8) 0%, rgba(5, 8, 24, 0) 100%);
+    padding: 24px;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .card-name {
-    font-size: 20px;
-    /* adjusted slightly from 24px for pixel-perfect card width fitting */
-    font-weight: 700;
-    color: #ffffff;
-    line-height: 1.1;
-    margin-bottom: 2px;
-    letter-spacing: -0.3px;
     font-family: 'Mona Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.96;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin-bottom: 6px;
 }
 
 .card-company {
-    font-size: 13px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.85);
-    text-transform: capitalize;
     font-family: 'Mona Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 0.96;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 /* Bottom Content */
 .card-bottom-content {
     position: absolute;
-    bottom: 24px;
-    left: 24px;
-    right: 24px;
-    z-index: 2;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 24px;
+    background: linear-gradient(358deg, rgba(5, 8, 24, 0.8) 0%, rgba(5, 8, 24, 0) 100%);
 }
 
 .result-number {
-    font-size: 52px;
-    font-weight: 800;
+    font-family: 'Mona Sans Condensed';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 0.85;
+    letter-spacing: 0;
     color: #ffffff;
-    letter-spacing: -2px;
-    line-height: 0.95;
-    font-family: 'Mona Sans', sans-serif;
+    margin-bottom: 15px;
+    max-width: 180px;
 }
 
 .result-desc {
-    font-size: 16px;
-    font-weight: 500;
-    color: #ffffff;
-    margin-top: 10px;
     font-family: 'Mona Sans', sans-serif;
-    line-height: 1.3;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 0.96;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin-top: 6px;
 }
 
 /* Card 4 Cursive Quote specific styles */
 .quote-card .card-bottom-content {
-    bottom: 20px;
+    bottom: 0;
 }
 
 .quote-symbol {
@@ -2249,21 +2334,10 @@ input {
     letter-spacing: 0px;
 }
 
-/* Card Hover States */
-.testimonial-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
 
-.testimonial-card:hover .card-bg-img {
-    transform: scale(1.08);
-}
 
 /* Responsive styling overrides */
 @media (max-width: 992px) {
-    .success-stories-section {
-        padding: 60px 0;
-    }
 
     .stories-header-row {
         margin-bottom: 36px;
@@ -2294,13 +2368,18 @@ input {
 
 /* Section outer wrapper */
 .trade-services-section {
-    background-color: #f5f5f5;
-    padding: 80px 30px;
+    padding: 100px 0;
+}
+
+.trade-wrap {
+    background: #F7F7F7;
+    box-shadow: 0px 4px 70.4px 0px #0000001F;
+    border-radius: 58px;
+    padding: 50px;
 }
 
 /* White card container */
 .trade-services-container {
-    max-width: 1140px;
     margin: 0 auto;
     background: #ffffff;
     border-radius: 30px;
@@ -2311,7 +2390,7 @@ input {
 /* Header block */
 .trade-services-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /* Heading wrapper */
@@ -2325,9 +2404,9 @@ input {
 
 /* Line 1 — bold uppercase navy */
 .trade-heading-line1 {
-    font-family: 'Mona Sans', 'Poppins', sans-serif;
-    font-weight: 900;
-    font-size: 64px;
+    font-family: 'Mona Sans Condensed';
+    font-weight: 700;
+    font-size: 80px;
     line-height: 1.08;
     text-transform: uppercase;
     color: #0b1230;
@@ -2337,24 +2416,24 @@ input {
 
 /* Line 2 — Cormorant Garamond italic blue */
 .trade-heading-line2 {
-    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    font-family: 'Daily Flashback';
     font-style: italic;
-    font-weight: 700;
-    font-size: 58px;
+    font-weight: 400;
+    font-size: 80px;
     line-height: 1.05;
-    color: #1e63ff;
+    color: #0059FF;
     display: block;
     margin-top: -2px;
 }
 
 /* Subheading */
 .trade-services-subheading {
-    font-family: 'Mona Sans', 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #333333;
+    font-family: 'Mona Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #060A1C;
     text-align: center;
-    margin-top: 18px;
+    margin-top: 10px;
     line-height: 1.5;
 }
 
@@ -2368,16 +2447,14 @@ input {
 /* Individual card base */
 .trade-card {
     position: relative;
-    height: 210px;
-    border-radius: 18px;
+    height: 160px;
+    border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
+    border: 2px solid #fff;
     /* Start invisible for fade-up animation */
-    transform: translateY(28px);
     transition:
-        opacity 0.5s ease,
-        transform 0.5s ease,
-        box-shadow 0.35s ease;
+        all 0.5s
 }
 
 /* JS adds this when card enters viewport */
@@ -2413,11 +2490,11 @@ input {
 .trade-card-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top,
-            rgba(0, 0, 0, 0.78) 0%,
-            rgba(0, 0, 0, 0.12) 60%,
-            rgba(0, 0, 0, 0.0) 100%);
+    background: linear-gradient(180deg, rgba(6, 10, 28, 0) 0%, #060A1C 100%);
+    height: 90px;
     z-index: 1;
+    top: auto;
+    bottom: 0;
 }
 
 /* Icon + title block at card bottom */
@@ -2443,15 +2520,17 @@ input {
     line-height: 1;
 }
 
-.trade-card-icon svg {
+.trade-card-icon img {
+    width: 34px;
+    height: 34px;
     display: block;
 }
 
 /* Title text */
 .trade-card-title {
-    font-family: 'Mona Sans', 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+    font-family: 'Mona Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
     color: #ffffff;
     text-align: center;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
@@ -2542,17 +2621,9 @@ input {
    ========================================================================== */
 
 .everything-section {
-    background-color: #050b1a;
-    /* Zigzag/chevron pattern background */
-    background-image: 
-        linear-gradient(135deg, rgba(255,255,255,0.02) 25%, transparent 25%), 
-        linear-gradient(225deg, rgba(255,255,255,0.02) 25%, transparent 25%), 
-        linear-gradient(45deg, rgba(255,255,255,0.02) 25%, transparent 25%), 
-        linear-gradient(315deg, rgba(255,255,255,0.02) 25%, #050b1a 25%);
-    background-position:  40px 0, 40px 0, 0 0, 0 0;
-    background-size: 80px 80px;
-    background-repeat: repeat;
-    padding: 100px 30px;
+    background: #050b1a url('../images/tab-bg.png') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
     position: relative;
     color: #fff;
 }
@@ -2572,15 +2643,15 @@ input {
 }
 
 .text-orange {
-    color: #f97316 !important;
+    color: #FF8600 !important;
 }
 
 .everything-subheading {
     font-family: 'Mona Sans', 'Poppins', sans-serif;
     font-size: 16px;
-    color: #94a3b8;
+    color: #fff;
     text-align: center;
-    margin: 24px auto 0;
+    margin: 15px auto 0;
     max-width: 700px;
     line-height: 1.6;
 }
@@ -2595,11 +2666,11 @@ input {
 
 .tab-btn {
     background: #091024;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     color: #ffffff;
-    font-family: 'Mona Sans', 'Poppins', sans-serif;
+    font-family: 'Mona Sans Condensed';
     font-weight: 800;
-    font-size: 22px;
+    font-size: 40px;
     text-transform: uppercase;
     padding: 18px 40px;
     border-radius: 16px;
@@ -2608,23 +2679,23 @@ input {
 }
 
 .tab-btn:hover {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .tab-btn.active {
-    background: #5b8def;
-    border-color: #5b8def;
+    background: #639AFF;
+    border-color: #0059FF;
     color: #ffffff;
 }
 
 /* Tabs Content Wrapper */
 .tabs-content-wrapper {
     background: #091024;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     padding: 50px;
     min-height: 400px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
 }
 
@@ -2638,8 +2709,15 @@ input {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .tab-pane-grid {
@@ -2650,8 +2728,8 @@ input {
 }
 
 .tab-pane-content h3 {
-    font-family: 'Mona Sans', 'Poppins', sans-serif;
-    font-size: 32px;
+    font-family: 'Mona Sans Condensed';
+    font-size: 36px;
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -2660,7 +2738,8 @@ input {
 
 .tab-pane-desc {
     font-size: 16px;
-    color: #e2e8f0;
+    color: #fff;
+    font-weight: 600;
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -2678,8 +2757,9 @@ input {
     display: flex;
     align-items: center;
     gap: 12px;
+    font-weight: 400;
     font-size: 15px;
-    color: #94a3b8;
+    color: #fff;
 }
 
 .tab-features-list li svg {
@@ -2688,8 +2768,9 @@ input {
 
 .tab-pane-image img {
     width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+    right: -50px;
+    margin-bottom: -50px;
 }
 
 /* CTA */
@@ -2721,6 +2802,7 @@ input {
     .tabs-navigation {
         flex-direction: column;
     }
+
     .tab-pane-grid {
         grid-template-columns: 1fr;
     }
@@ -2741,7 +2823,8 @@ input {
 
 .proven-results-header {
     margin-bottom: 50px;
-    text-align: left; /* Image shows it aligned left */
+    text-align: left;
+    /* Image shows it aligned left */
 }
 
 .align-left {
@@ -2757,13 +2840,13 @@ input {
 .video-testimonial-card {
     background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     display: flex;
     overflow: hidden;
     padding: 30px;
     gap: 40px;
     align-items: center;
-    border: 1px solid rgba(0,0,0,0.03);
+    border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .vtc-content {
@@ -2817,12 +2900,13 @@ input {
 }
 
 .vtc-video {
-    flex: 0 0 45%; /* Right side video takes ~45% */
+    flex: 0 0 45%;
+    /* Right side video takes ~45% */
     position: relative;
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .vtc-video img {
@@ -2842,7 +2926,7 @@ input {
     font-weight: 900;
     color: #ffffff;
     line-height: 0.95;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     z-index: 2;
     pointer-events: none;
     letter-spacing: -1px;
@@ -2871,7 +2955,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 5px 15px rgba(255,0,0,0.4);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
     transition: transform 0.2s ease, background-color 0.2s ease;
     z-index: 3;
 }
@@ -2898,9 +2982,11 @@ input {
         flex-direction: column;
         padding: 25px;
     }
+
     .vtc-content {
         padding-left: 0;
     }
+
     .vtc-video {
         width: 100%;
         flex: auto;
@@ -2949,14 +3035,14 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     padding: 20px;
     font-family: 'Mona Sans', 'Poppins', sans-serif;
     font-weight: 800;
     color: #475569;
     font-size: 16px;
     text-align: center;
-    border: 1px solid rgba(0,0,0,0.02);
+    border: 1px solid rgba(0, 0, 0, 0.02);
     text-transform: uppercase;
     letter-spacing: -0.5px;
 }
@@ -2977,6 +3063,7 @@ input {
     .brand-logos-header h2 {
         font-size: 26px;
     }
+
     .logo-box {
         height: 75px;
         font-size: 14px;
@@ -2987,7 +3074,8 @@ input {
    FOUNDERS MESSAGE SECTION
    ========================================================================== */
 .founders-message-section {
-    background-color: #050b1a; /* Dark navy background matching the site */
+    background-color: #050b1a;
+    /* Dark navy background matching the site */
     padding: 100px 30px;
     display: flex;
     justify-content: center;
@@ -3000,12 +3088,12 @@ input {
 
 .founders-card {
     background-color: #0b1221;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 24px;
     position: relative;
     overflow: hidden;
     padding: 60px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* Ambient glow inside the card */
@@ -3019,7 +3107,8 @@ input {
 }
 
 .glow-blue {
-    background: #1e3a8a; /* Deep blue */
+    background: #1e3a8a;
+    /* Deep blue */
     width: 400px;
     height: 400px;
     right: 10%;
@@ -3027,7 +3116,8 @@ input {
 }
 
 .glow-orange {
-    background: #ea580c; /* Burnt orange */
+    background: #ea580c;
+    /* Burnt orange */
     width: 400px;
     height: 400px;
     right: -5%;
@@ -3040,7 +3130,8 @@ input {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     position: relative;
-    z-index: 1; /* Above the glows */
+    z-index: 1;
+    /* Above the glows */
     align-items: center;
 }
 
@@ -3070,7 +3161,8 @@ input {
     font-style: italic;
     font-weight: 700;
     font-size: 64px;
-    color: #f97316; /* Orange color */
+    color: #f97316;
+    /* Orange color */
     margin-top: -10px;
 }
 
@@ -3118,7 +3210,8 @@ input {
 .founders-image-content {
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Align bottom */
+    align-items: flex-end;
+    /* Align bottom */
     height: 100%;
     position: relative;
 }
@@ -3130,7 +3223,8 @@ input {
     display: block;
     object-fit: contain;
     /* Move it down so it visually sits on the bottom edge of the card */
-    margin-bottom: -60px; /* Offset the 60px padding of the card */
+    margin-bottom: -60px;
+    /* Offset the 60px padding of the card */
     border-radius: 12px;
 }
 
@@ -3138,26 +3232,34 @@ input {
     .founders-card {
         padding: 40px 30px;
     }
+
     .founders-content-grid {
         grid-template-columns: 1fr;
     }
+
     .founders-text-content {
         padding-right: 0;
     }
+
     .founders-photo {
         max-width: 100%;
-        margin-bottom: -40px; /* Offset the new 40px padding */
+        margin-bottom: -40px;
+        /* Offset the new 40px padding */
         margin-top: 40px;
     }
+
     .fh-line1 {
         font-size: 42px;
     }
+
     .fh-line2 {
         font-size: 48px;
     }
+
     .founders-body {
         max-width: 100%;
     }
+
     .glow-orange {
         right: 0;
         bottom: -50px;
@@ -3170,12 +3272,12 @@ input {
 .pricing-section {
     background-color: #f8f9fa;
     /* Light zigzag pattern */
-    background-image: 
-        linear-gradient(135deg, rgba(0,0,0,0.02) 25%, transparent 25%), 
-        linear-gradient(225deg, rgba(0,0,0,0.02) 25%, transparent 25%), 
-        linear-gradient(45deg, rgba(0,0,0,0.02) 25%, transparent 25%), 
-        linear-gradient(315deg, rgba(0,0,0,0.02) 25%, #f8f9fa 25%);
-    background-position:  40px 0, 40px 0, 0 0, 0 0;
+    background-image:
+        linear-gradient(135deg, rgba(0, 0, 0, 0.02) 25%, transparent 25%),
+        linear-gradient(225deg, rgba(0, 0, 0, 0.02) 25%, transparent 25%),
+        linear-gradient(45deg, rgba(0, 0, 0, 0.02) 25%, transparent 25%),
+        linear-gradient(315deg, rgba(0, 0, 0, 0.02) 25%, #f8f9fa 25%);
+    background-position: 40px 0, 40px 0, 0 0, 0 0;
     background-size: 80px 80px;
     background-repeat: repeat;
     padding: 100px 30px;
@@ -3203,11 +3305,12 @@ input {
 }
 
 .pricing-card {
-    background: #f1f5f9; /* Light grey base for the card */
+    background: #f1f5f9;
+    /* Light grey base for the card */
     border-radius: 24px;
     overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.05);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
 }
@@ -3220,7 +3323,8 @@ input {
 .pricing-top-box {
     padding: 40px;
     border-radius: 20px;
-    margin: 10px 10px 0 10px; /* Slight inset look */
+    margin: 10px 10px 0 10px;
+    /* Slight inset look */
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -3272,8 +3376,8 @@ input {
 }
 
 .btn-pricing-dark {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: #ffffff;
     padding: 16px 20px;
     border-radius: 40px;
@@ -3284,7 +3388,7 @@ input {
 }
 
 .btn-pricing-dark:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .btn-pricing-light {
@@ -3296,12 +3400,12 @@ input {
     font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn-pricing-light:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .pricing-bottom-box {
@@ -3345,7 +3449,8 @@ input {
 }
 
 .list-gold li i {
-    color: #eab308; /* Golden yellow */
+    color: #eab308;
+    /* Golden yellow */
 }
 
 .pricing-expansion-cta {
@@ -3355,7 +3460,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .pricing-expansion-cta p {
@@ -3382,6 +3487,7 @@ input {
     .pricing-cards-grid {
         grid-template-columns: 1fr;
     }
+
     .pricing-expansion-cta {
         flex-direction: column;
         padding: 20px;
@@ -3418,7 +3524,7 @@ input {
 
 .social-pill {
     background: #f1f5f9;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 50px;
     padding: 8px 24px 8px 8px;
     display: flex;
@@ -3443,7 +3549,8 @@ input {
 .sp-blue-circle {
     width: 48px;
     height: 48px;
-    background: #3b82f6; /* UP Rank blue */
+    background: #3b82f6;
+    /* UP Rank blue */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -3452,6 +3559,7 @@ input {
     font-size: 11px;
     font-weight: 800;
 }
+
 .sp-blue-circle::after {
     content: 'UpRank';
     font-family: 'Mona Sans', sans-serif;
@@ -3495,7 +3603,8 @@ input {
 
 /* Social Slider */
 .social-slider {
-    margin: 0 -15px; /* offset padding on slides */
+    margin: 0 -15px;
+    /* offset padding on slides */
 }
 
 .social-slide {
@@ -3508,7 +3617,7 @@ input {
     aspect-ratio: 4 / 5;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
 }
 
@@ -3526,6 +3635,7 @@ input {
         flex-direction: column;
         align-items: center;
     }
+
     .social-pill {
         width: 100%;
         max-width: 300px;
