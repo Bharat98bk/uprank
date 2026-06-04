@@ -91,36 +91,66 @@
 
     <!-- Mobile Nav Slide-over Menu -->
     <div class="mobile-nav" id="mobile-nav">
+        <!-- Top header with logo and close button -->
+        <div class="mobile-nav-top">
+            <a href="#" class="mobile-logo">
+                <img src="./assets/images/logo.svg" alt="UpRank Logo">
+            </a>
+            <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
         <ul class="mobile-nav-list">
-            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#about" class="mobile-nav-link">ABOUT</a></li>
             <li>
-                <div class="mobile-dropdown-header">Services <i class="fa-solid fa-chevron-down"></i></div>
+                <div class="mobile-dropdown-header">SERVICES <svg width="19" height="11" viewBox="0 0 19 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.25 1L9.125 9.125L1 1" stroke="#E0E4F4" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
                 <ul class="mobile-dropdown-list">
-                    <li><a href="#services-seo" class="mobile-nav-link">Search Engine Optimization</a></li>
-                    <li><a href="#services-local" class="mobile-nav-link">Local Map Pack Dominance</a></li>
-                    <li><a href="#services-ppc" class="mobile-nav-link">Paid Advertising (PPC)</a></li>
-                    <li><a href="#services-web" class="mobile-nav-link">Web Design & Conversion</a></li>
+                    <li><a href="#services-seo" class="mobile-nav-link">SEARCH ENGINE OPTIMIZATION</a></li>
+                    <li><a href="#services-local" class="mobile-nav-link">LOCAL MAP PACK DOMINANCE</a></li>
+                    <li><a href="#services-ppc" class="mobile-nav-link">PAID ADVERTISING (PPC)</a></li>
+                    <li><a href="#services-web" class="mobile-nav-link">WEB DESIGN & CONVERSION</a></li>
                 </ul>
             </li>
-            <li><a href="#case-studies" class="mobile-nav-link">Case Studies</a></li>
-            <li><a href="#results" class="mobile-nav-link">Results</a></li>
+            <li><a href="#case-studies" class="mobile-nav-link">CASE STUDIES</a></li>
+            <li><a href="#results" class="mobile-nav-link">RESULTS</a></li>
             <li>
-                <div class="mobile-dropdown-header">Resources <i class="fa-solid fa-chevron-down"></i></div>
+                <div class="mobile-dropdown-header">RESOURCES <svg width="19" height="11" viewBox="0 0 19 11"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.25 1L9.125 9.125L1 1" stroke="#E0E4F4" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
                 <ul class="mobile-dropdown-list">
-                    <li><a href="#blog" class="mobile-nav-link">Trade Marketing Blog</a></li>
-                    <li><a href="#free-audit" class="mobile-nav-link">Free Speed & SEO Audit</a></li>
-                    <li><a href="#guides" class="mobile-nav-link">Tradie Growth Blueprint</a></li>
+                    <li><a href="#blog" class="mobile-nav-link">TRADE MARKETING BLOG</a></li>
+                    <li><a href="#free-audit" class="mobile-nav-link">FREE SPEED & SEO AUDIT</a></li>
+                    <li><a href="#guides" class="mobile-nav-link">TRADIE GROWTH BLUEPRINT</a></li>
                 </ul>
-            </li>
-            <li>
-                <a href="#contact" class="btn btn-mobile-cta">Get in Touch with the Team</a>
             </li>
         </ul>
+
+        <div class="mobile-nav-divider"></div>
+
+        <div class="mobile-nav-footer">
+            <img src="./assets/images/mob-menu.png" alt="Google Review" class="mobile-review-img">
+            <div class="mobile-partners">
+                <img src="./assets/images/partner-1.png" alt="Google Partner">
+                <img src="./assets/images/partner-2.png" alt="Meta Business Partner">
+                <img src="./assets/images/partner-3.png" alt="Bing ads">
+                <img src="./assets/images/partner-4.png" alt="Shopify partners">
+            </div>
+        </div>
     </div>
 
     <main>
         <!-- Hero Section -->
         <section class="hero-section" id="hero">
+            <div class="hero-glow"></div>
             <div class="hero-right-column">
                 <div class="hero-image-wrapper">
                     <img src="./assets/images/Slider.png" alt="UpRank Cards Layout" class="floating-hero-image">
@@ -138,7 +168,20 @@
                         <span class="line-4">Calls First.</span>
                     </h1>
 
-
+                    <!-- Right Column: Hero Slider Image with 3D Animation -->
+                    <div class="hero-mobile-slider-container">
+                        <div class="hero-mobile-slider">
+                            <div class="slide"><img src="./assets/images/heroimg1.png" alt="Hero Slide 1"></div>
+                            <div class="slide"><img src="./assets/images/heroimg2.png" alt="Hero Slide 2"></div>
+                            <div class="slide"><img src="./assets/images/heroimg3.png" alt="Hero Slide 3"></div>
+                            <div class="slide"><img src="./assets/images/heroimg4.png" alt="Hero Slide 4"></div>
+                            <div class="slide"><img src="./assets/images/heroimg5.png" alt="Hero Slide 5"></div>
+                            <div class="slide"><img src="./assets/images/heroimg6.png" alt="Hero Slide 6"></div>
+                            <div class="slide"><img src="./assets/images/heroimg7.png" alt="Hero Slide 7"></div>
+                            <div class="slide"><img src="./assets/images/heroimg8.png" alt="Hero Slide 8"></div>
+                            <div class="slide"><img src="./assets/images/heroimg9.png" alt="Hero Slide 9"></div>
+                        </div>
+                    </div>
 
                     <!-- CTA Button & Handwriting Accent -->
                     <div class="hero-cta-wrapper">
@@ -180,7 +223,7 @@
 
                 </div>
 
-                <!-- Right Column: Hero Slider Image with 3D Animation -->
+
 
             </div>
         </section>
@@ -489,36 +532,33 @@
                                 <p class="tab-pane-desc">Own the top 3 of Google maps, where 78% of calls come from.</p>
                                 <ul class="tab-features-list">
                                     <li>
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-                                                stroke="#3b82f6" stroke-width="2" />
-                                            <path d="M8 12L11 15L16 9" stroke="#3b82f6" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                d="M20.3203 8.25469C19.9903 7.91063 19.65 7.55531 19.5384 7.28625C19.4391 7.04625 19.4316 6.55219 19.425 6.11719C19.4109 5.17969 19.3931 4.01344 18.5644 3.18563C17.7356 2.35781 16.5703 2.34187 15.6328 2.325C15.1978 2.31844 14.7037 2.31094 14.4637 2.21156C14.1947 2.1 13.8394 1.75969 13.4953 1.42969C12.8316 0.793125 12.0047 0 10.875 0C9.74531 0 8.91844 0.793125 8.25469 1.42969C7.91063 1.75969 7.55531 2.1 7.28625 2.21156C7.04625 2.31094 6.55219 2.31844 6.11719 2.325C5.17969 2.34375 4.01344 2.35687 3.1875 3.1875C2.36156 4.01813 2.34375 5.17969 2.325 6.11719C2.31844 6.55219 2.31094 7.04625 2.21156 7.28625C2.1 7.55531 1.75969 7.91063 1.42969 8.25469C0.793125 8.91844 0 9.75 0 10.875C0 12 0.793125 12.8316 1.42969 13.5C1.75969 13.8441 2.1 14.1994 2.21156 14.4684C2.31094 14.7084 2.31844 15.2025 2.325 15.6375C2.33906 16.575 2.35687 17.7413 3.18563 18.5691C4.01437 19.3969 5.17969 19.4128 6.11719 19.4297C6.55219 19.4363 7.04625 19.4438 7.28625 19.5431C7.55531 19.6547 7.91063 19.995 8.25469 20.325C8.91844 20.9569 9.75 21.75 10.875 21.75C12 21.75 12.8316 20.9569 13.4953 20.3203C13.8394 19.9903 14.1947 19.65 14.4637 19.5384C14.7037 19.4391 15.1978 19.4316 15.6328 19.425C16.5703 19.4109 17.7366 19.3931 18.5644 18.5644C19.3922 17.7356 19.4081 16.5703 19.425 15.6328C19.4316 15.1978 19.4391 14.7037 19.5384 14.4637C19.65 14.1947 19.9903 13.8394 20.3203 13.4953C20.9569 12.8316 21.75 12.0047 21.75 10.875C21.75 9.74531 20.9569 8.91844 20.3203 8.25469ZM18.6966 11.9381C18.2447 12.4069 17.7328 12.9431 17.46 13.6031C17.1956 14.2406 17.1853 14.9306 17.1788 15.5991C17.1713 16.1016 17.1609 16.7906 16.9772 16.9734C16.7934 17.1562 16.1053 17.1675 15.6028 17.175C14.9344 17.1853 14.2444 17.1956 13.6069 17.4562C12.9506 17.7291 12.4134 18.2409 11.9419 18.6928C11.6044 19.0163 11.1 19.5 10.875 19.5C10.65 19.5 10.1456 19.0162 9.81188 18.6966C9.34313 18.2447 8.80688 17.7328 8.14688 17.46C7.50938 17.1956 6.81938 17.1853 6.15094 17.1788C5.64844 17.1713 4.95937 17.1609 4.77656 16.9772C4.59375 16.7934 4.5825 16.1053 4.575 15.6028C4.56469 14.9344 4.55437 14.2444 4.29375 13.6069C4.02094 12.9506 3.50906 12.4134 3.05719 11.9419C2.73375 11.6044 2.25 11.1 2.25 10.875C2.25 10.65 2.73375 10.1456 3.05344 9.81188C3.50531 9.34313 4.01719 8.80688 4.29 8.14688C4.55437 7.50938 4.56469 6.81938 4.57125 6.15094C4.5825 5.64844 4.59375 4.95937 4.78125 4.78125C4.96875 4.60313 5.65313 4.58719 6.15563 4.57969C6.82406 4.56938 7.51406 4.55906 8.15156 4.29844C8.80781 4.02562 9.345 3.51375 9.81656 3.06187C10.1456 2.73375 10.65 2.25 10.875 2.25C11.1 2.25 11.6044 2.73375 11.9381 3.05344C12.4069 3.50531 12.9431 4.01719 13.6031 4.29C14.2406 4.55437 14.9306 4.56469 15.5991 4.57125C16.1016 4.57875 16.7906 4.58906 16.9734 4.77281C17.1562 4.95656 17.1675 5.64469 17.175 6.14719C17.1853 6.81563 17.1956 7.50563 17.4562 8.14313C17.7291 8.79938 18.2409 9.33656 18.6928 9.80813C19.0125 10.1419 19.4963 10.6462 19.4963 10.8713C19.4963 11.0962 19.0162 11.6044 18.6966 11.9381ZM15.4209 7.82906C15.5258 7.93358 15.609 8.05777 15.6658 8.19452C15.7226 8.33126 15.7518 8.47787 15.7518 8.62594C15.7518 8.774 15.7226 8.92061 15.6658 9.05736C15.609 9.1941 15.5258 9.3183 15.4209 9.42281L10.1709 14.6728C10.0664 14.7777 9.94223 14.8609 9.80548 14.9177C9.66874 14.9745 9.52213 15.0037 9.37406 15.0037C9.226 15.0037 9.07939 14.9745 8.94264 14.9177C8.8059 14.8609 8.6817 14.7777 8.57719 14.6728L6.32719 12.4228C6.22254 12.3182 6.13953 12.1939 6.0829 12.0572C6.02626 11.9205 5.99711 11.7739 5.99711 11.6259C5.99711 11.4779 6.02626 11.3314 6.0829 11.1947C6.13953 11.0579 6.22254 10.9337 6.32719 10.8291C6.43183 10.7244 6.55607 10.6414 6.6928 10.5848C6.82952 10.5281 6.97607 10.499 7.12406 10.499C7.27206 10.499 7.4186 10.5281 7.55533 10.5848C7.69206 10.6414 7.81629 10.7244 7.92094 10.8291L9.375 12.2812L13.8291 7.82625C13.9337 7.72184 14.058 7.63908 14.1946 7.5827C14.3313 7.52633 14.4777 7.49745 14.6256 7.49771C14.7734 7.49797 14.9198 7.52737 15.0562 7.58422C15.1927 7.64108 15.3166 7.72428 15.4209 7.82906Z"
+                                                fill="#0059FF" />
                                         </svg>
+
                                         Google business profile optimization
                                     </li>
                                     <li>
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-                                                stroke="#3b82f6" stroke-width="2" />
-                                            <path d="M8 12L11 15L16 9" stroke="#3b82f6" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                d="M20.3203 8.25469C19.9903 7.91063 19.65 7.55531 19.5384 7.28625C19.4391 7.04625 19.4316 6.55219 19.425 6.11719C19.4109 5.17969 19.3931 4.01344 18.5644 3.18563C17.7356 2.35781 16.5703 2.34187 15.6328 2.325C15.1978 2.31844 14.7037 2.31094 14.4637 2.21156C14.1947 2.1 13.8394 1.75969 13.4953 1.42969C12.8316 0.793125 12.0047 0 10.875 0C9.74531 0 8.91844 0.793125 8.25469 1.42969C7.91063 1.75969 7.55531 2.1 7.28625 2.21156C7.04625 2.31094 6.55219 2.31844 6.11719 2.325C5.17969 2.34375 4.01344 2.35687 3.1875 3.1875C2.36156 4.01813 2.34375 5.17969 2.325 6.11719C2.31844 6.55219 2.31094 7.04625 2.21156 7.28625C2.1 7.55531 1.75969 7.91063 1.42969 8.25469C0.793125 8.91844 0 9.75 0 10.875C0 12 0.793125 12.8316 1.42969 13.5C1.75969 13.8441 2.1 14.1994 2.21156 14.4684C2.31094 14.7084 2.31844 15.2025 2.325 15.6375C2.33906 16.575 2.35687 17.7413 3.18563 18.5691C4.01437 19.3969 5.17969 19.4128 6.11719 19.4297C6.55219 19.4363 7.04625 19.4438 7.28625 19.5431C7.55531 19.6547 7.91063 19.995 8.25469 20.325C8.91844 20.9569 9.75 21.75 10.875 21.75C12 21.75 12.8316 20.9569 13.4953 20.3203C13.8394 19.9903 14.1947 19.65 14.4637 19.5384C14.7037 19.4391 15.1978 19.4316 15.6328 19.425C16.5703 19.4109 17.7366 19.3931 18.5644 18.5644C19.3922 17.7356 19.4081 16.5703 19.425 15.6328C19.4316 15.1978 19.4391 14.7037 19.5384 14.4637C19.65 14.1947 19.9903 13.8394 20.3203 13.4953C20.9569 12.8316 21.75 12.0047 21.75 10.875C21.75 9.74531 20.9569 8.91844 20.3203 8.25469ZM18.6966 11.9381C18.2447 12.4069 17.7328 12.9431 17.46 13.6031C17.1956 14.2406 17.1853 14.9306 17.1788 15.5991C17.1713 16.1016 17.1609 16.7906 16.9772 16.9734C16.7934 17.1562 16.1053 17.1675 15.6028 17.175C14.9344 17.1853 14.2444 17.1956 13.6069 17.4562C12.9506 17.7291 12.4134 18.2409 11.9419 18.6928C11.6044 19.0163 11.1 19.5 10.875 19.5C10.65 19.5 10.1456 19.0162 9.81188 18.6966C9.34313 18.2447 8.80688 17.7328 8.14688 17.46C7.50938 17.1956 6.81938 17.1853 6.15094 17.1788C5.64844 17.1713 4.95937 17.1609 4.77656 16.9772C4.59375 16.7934 4.5825 16.1053 4.575 15.6028C4.56469 14.9344 4.55437 14.2444 4.29375 13.6069C4.02094 12.9506 3.50906 12.4134 3.05719 11.9419C2.73375 11.6044 2.25 11.1 2.25 10.875C2.25 10.65 2.73375 10.1456 3.05344 9.81188C3.50531 9.34313 4.01719 8.80688 4.29 8.14688C4.55437 7.50938 4.56469 6.81938 4.57125 6.15094C4.5825 5.64844 4.59375 4.95937 4.78125 4.78125C4.96875 4.60313 5.65313 4.58719 6.15563 4.57969C6.82406 4.56938 7.51406 4.55906 8.15156 4.29844C8.80781 4.02562 9.345 3.51375 9.81656 3.06187C10.1456 2.73375 10.65 2.25 10.875 2.25C11.1 2.25 11.6044 2.73375 11.9381 3.05344C12.4069 3.50531 12.9431 4.01719 13.6031 4.29C14.2406 4.55437 14.9306 4.56469 15.5991 4.57125C16.1016 4.57875 16.7906 4.58906 16.9734 4.77281C17.1562 4.95656 17.1675 5.64469 17.175 6.14719C17.1853 6.81563 17.1956 7.50563 17.4562 8.14313C17.7291 8.79938 18.2409 9.33656 18.6928 9.80813C19.0125 10.1419 19.4963 10.6462 19.4963 10.8713C19.4963 11.0962 19.0162 11.6044 18.6966 11.9381ZM15.4209 7.82906C15.5258 7.93358 15.609 8.05777 15.6658 8.19452C15.7226 8.33126 15.7518 8.47787 15.7518 8.62594C15.7518 8.774 15.7226 8.92061 15.6658 9.05736C15.609 9.1941 15.5258 9.3183 15.4209 9.42281L10.1709 14.6728C10.0664 14.7777 9.94223 14.8609 9.80548 14.9177C9.66874 14.9745 9.52213 15.0037 9.37406 15.0037C9.226 15.0037 9.07939 14.9745 8.94264 14.9177C8.8059 14.8609 8.6817 14.7777 8.57719 14.6728L6.32719 12.4228C6.22254 12.3182 6.13953 12.1939 6.0829 12.0572C6.02626 11.9205 5.99711 11.7739 5.99711 11.6259C5.99711 11.4779 6.02626 11.3314 6.0829 11.1947C6.13953 11.0579 6.22254 10.9337 6.32719 10.8291C6.43183 10.7244 6.55607 10.6414 6.6928 10.5848C6.82952 10.5281 6.97607 10.499 7.12406 10.499C7.27206 10.499 7.4186 10.5281 7.55533 10.5848C7.69206 10.6414 7.81629 10.7244 7.92094 10.8291L9.375 12.2812L13.8291 7.82625C13.9337 7.72184 14.058 7.63908 14.1946 7.5827C14.3313 7.52633 14.4777 7.49745 14.6256 7.49771C14.7734 7.49797 14.9198 7.52737 15.0562 7.58422C15.1927 7.64108 15.3166 7.72428 15.4209 7.82906Z"
+                                                fill="#0059FF" />
                                         </svg>
+
                                         Hyper-local service area pages
                                     </li>
                                     <li>
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-                                                stroke="#3b82f6" stroke-width="2" />
-                                            <path d="M8 12L11 15L16 9" stroke="#3b82f6" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                d="M20.3203 8.25469C19.9903 7.91063 19.65 7.55531 19.5384 7.28625C19.4391 7.04625 19.4316 6.55219 19.425 6.11719C19.4109 5.17969 19.3931 4.01344 18.5644 3.18563C17.7356 2.35781 16.5703 2.34187 15.6328 2.325C15.1978 2.31844 14.7037 2.31094 14.4637 2.21156C14.1947 2.1 13.8394 1.75969 13.4953 1.42969C12.8316 0.793125 12.0047 0 10.875 0C9.74531 0 8.91844 0.793125 8.25469 1.42969C7.91063 1.75969 7.55531 2.1 7.28625 2.21156C7.04625 2.31094 6.55219 2.31844 6.11719 2.325C5.17969 2.34375 4.01344 2.35687 3.1875 3.1875C2.36156 4.01813 2.34375 5.17969 2.325 6.11719C2.31844 6.55219 2.31094 7.04625 2.21156 7.28625C2.1 7.55531 1.75969 7.91063 1.42969 8.25469C0.793125 8.91844 0 9.75 0 10.875C0 12 0.793125 12.8316 1.42969 13.5C1.75969 13.8441 2.1 14.1994 2.21156 14.4684C2.31094 14.7084 2.31844 15.2025 2.325 15.6375C2.33906 16.575 2.35687 17.7413 3.18563 18.5691C4.01437 19.3969 5.17969 19.4128 6.11719 19.4297C6.55219 19.4363 7.04625 19.4438 7.28625 19.5431C7.55531 19.6547 7.91063 19.995 8.25469 20.325C8.91844 20.9569 9.75 21.75 10.875 21.75C12 21.75 12.8316 20.9569 13.4953 20.3203C13.8394 19.9903 14.1947 19.65 14.4637 19.5384C14.7037 19.4391 15.1978 19.4316 15.6328 19.425C16.5703 19.4109 17.7366 19.3931 18.5644 18.5644C19.3922 17.7356 19.4081 16.5703 19.425 15.6328C19.4316 15.1978 19.4391 14.7037 19.5384 14.4637C19.65 14.1947 19.9903 13.8394 20.3203 13.4953C20.9569 12.8316 21.75 12.0047 21.75 10.875C21.75 9.74531 20.9569 8.91844 20.3203 8.25469ZM18.6966 11.9381C18.2447 12.4069 17.7328 12.9431 17.46 13.6031C17.1956 14.2406 17.1853 14.9306 17.1788 15.5991C17.1713 16.1016 17.1609 16.7906 16.9772 16.9734C16.7934 17.1562 16.1053 17.1675 15.6028 17.175C14.9344 17.1853 14.2444 17.1956 13.6069 17.4562C12.9506 17.7291 12.4134 18.2409 11.9419 18.6928C11.6044 19.0163 11.1 19.5 10.875 19.5C10.65 19.5 10.1456 19.0162 9.81188 18.6966C9.34313 18.2447 8.80688 17.7328 8.14688 17.46C7.50938 17.1956 6.81938 17.1853 6.15094 17.1788C5.64844 17.1713 4.95937 17.1609 4.77656 16.9772C4.59375 16.7934 4.5825 16.1053 4.575 15.6028C4.56469 14.9344 4.55437 14.2444 4.29375 13.6069C4.02094 12.9506 3.50906 12.4134 3.05719 11.9419C2.73375 11.6044 2.25 11.1 2.25 10.875C2.25 10.65 2.73375 10.1456 3.05344 9.81188C3.50531 9.34313 4.01719 8.80688 4.29 8.14688C4.55437 7.50938 4.56469 6.81938 4.57125 6.15094C4.5825 5.64844 4.59375 4.95937 4.78125 4.78125C4.96875 4.60313 5.65313 4.58719 6.15563 4.57969C6.82406 4.56938 7.51406 4.55906 8.15156 4.29844C8.80781 4.02562 9.345 3.51375 9.81656 3.06187C10.1456 2.73375 10.65 2.25 10.875 2.25C11.1 2.25 11.6044 2.73375 11.9381 3.05344C12.4069 3.50531 12.9431 4.01719 13.6031 4.29C14.2406 4.55437 14.9306 4.56469 15.5991 4.57125C16.1016 4.57875 16.7906 4.58906 16.9734 4.77281C17.1562 4.95656 17.1675 5.64469 17.175 6.14719C17.1853 6.81563 17.1956 7.50563 17.4562 8.14313C17.7291 8.79938 18.2409 9.33656 18.6928 9.80813C19.0125 10.1419 19.4963 10.6462 19.4963 10.8713C19.4963 11.0962 19.0162 11.6044 18.6966 11.9381ZM15.4209 7.82906C15.5258 7.93358 15.609 8.05777 15.6658 8.19452C15.7226 8.33126 15.7518 8.47787 15.7518 8.62594C15.7518 8.774 15.7226 8.92061 15.6658 9.05736C15.609 9.1941 15.5258 9.3183 15.4209 9.42281L10.1709 14.6728C10.0664 14.7777 9.94223 14.8609 9.80548 14.9177C9.66874 14.9745 9.52213 15.0037 9.37406 15.0037C9.226 15.0037 9.07939 14.9745 8.94264 14.9177C8.8059 14.8609 8.6817 14.7777 8.57719 14.6728L6.32719 12.4228C6.22254 12.3182 6.13953 12.1939 6.0829 12.0572C6.02626 11.9205 5.99711 11.7739 5.99711 11.6259C5.99711 11.4779 6.02626 11.3314 6.0829 11.1947C6.13953 11.0579 6.22254 10.9337 6.32719 10.8291C6.43183 10.7244 6.55607 10.6414 6.6928 10.5848C6.82952 10.5281 6.97607 10.499 7.12406 10.499C7.27206 10.499 7.4186 10.5281 7.55533 10.5848C7.69206 10.6414 7.81629 10.7244 7.92094 10.8291L9.375 12.2812L13.8291 7.82625C13.9337 7.72184 14.058 7.63908 14.1946 7.5827C14.3313 7.52633 14.4777 7.49745 14.6256 7.49771C14.7734 7.49797 14.9198 7.52737 15.0562 7.58422C15.1927 7.64108 15.3166 7.72428 15.4209 7.82906Z"
+                                                fill="#0059FF" />
                                         </svg>
+
                                         AI-optimized for AI search rankings
                                     </li>
                                 </ul>
@@ -615,33 +655,25 @@
                     <div class="video-testimonial-card">
                         <div class="vtc-content">
                             <div class="vtc-logo">
-                                <!-- Placeholder logo -->
-                                <h3
-                                    style="font-family: 'Caveat', cursive; font-size: 28px; font-weight: 700; color: #0f172a; margin: 0; line-height: 1;">
-                                    Plumbed Up</h3>
+                                <img src="./assets/images/carlogo1.png" alt="Plumbed Up Logo"
+                                    style=" width: auto; object-fit: contain;">
                             </div>
                             <p class="vtc-quote">
-                                "We'd hit a plateau relying on word of <strong>mouth for 18 years</strong>. Since
+                                "We'd hit a plateau relying on word of <strong>mouth for 19 years</strong>. Since
                                 partnering with them, we've doubled our hot <strong>water installations—from 30 to over
                                     60 per month</strong>. The quality of leads is there all the time. People are ready
                                 to buy now, not tire kickers. We've pulled the reins in because it's working too well."
                             </p>
                             <div class="vtc-author">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80"
-                                    alt="Donnell Thomas" class="vtc-avatar">
+                                <img src="./assets/images/carduser1.png" alt="Donnell Thomas" class="vtc-avatar">
                                 <div class="vtc-author-info">
                                     <h4>Donnell Thomas</h4>
                                     <span>Plumbed Up</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="vtc-video">
-                            <!-- Placeholder video thumbnail mimicking the original -->
-                            <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=600&h=350&q=80"
-                                alt="Video Thumbnail">
-                            <div class="vtc-video-overlay-text">
-                                WE'VE<br>DOUBLED OUR<br><span class="highlight">TURNOVER</span>
-                            </div>
+                        <div class="vtc-video" data-youtube-id="LXb3EKWsInQ">
+                            <img src="./assets/images/vedio-img.png" alt="Video Thumbnail">
                             <div class="play-button"></div>
                         </div>
                     </div>
@@ -650,35 +682,25 @@
                     <div class="video-testimonial-card">
                         <div class="vtc-content">
                             <div class="vtc-logo">
-                                <!-- Placeholder logo -->
-                                <h3
-                                    style="font-family: 'Mona Sans', sans-serif; font-size: 24px; font-weight: 800; color: #10b981; margin: 0; line-height: 1; letter-spacing: -1px;">
-                                    Castlefield <span
-                                        style="font-weight: 400; font-size: 14px; color: #64748b; display: block;">KINDERGARTEN</span>
-                                </h3>
+                                <img src="./assets/images/carlogo2.png" alt="Castlefield Kindergarten Logo"
+                                    style=" width: auto; object-fit: contain;">
                             </div>
                             <p class="vtc-quote">
-                                "We'd hit a plateau relying on word of <strong>mouth for 18 years</strong>. Since
+                                "We'd hit a plateau relying on word of <strong>mouth for 19 years</strong>. Since
                                 partnering with them, we've doubled our hot <strong>water installations—from 30 to over
                                     60 per month</strong>. The quality of leads is there all the time. People are ready
                                 to buy now, not tire kickers. We've pulled the reins in because it's working too well."
                             </p>
                             <div class="vtc-author">
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&h=100&q=80"
-                                    alt="Sammy Norman" class="vtc-avatar">
+                                <img src="./assets/images/carduser2.png" alt="Sammy Norman" class="vtc-avatar">
                                 <div class="vtc-author-info">
                                     <h4>Sammy Norman</h4>
                                     <span>Castlefield Kindergarten</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="vtc-video">
-                            <!-- Placeholder video thumbnail mimicking the original -->
-                            <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=600&h=350&q=80"
-                                alt="Video Thumbnail">
-                            <div class="vtc-video-overlay-text">
-                                WE'VE<br>DOUBLED OUR<br><span class="highlight">TURNOVER</span>
-                            </div>
+                        <div class="vtc-video" data-youtube-id="LXb3EKWsInQ">
+                            <img src="./assets/images/vedio-img.png" alt="Video Thumbnail">
                             <div class="play-button"></div>
                         </div>
                     </div>
@@ -687,37 +709,25 @@
                     <div class="video-testimonial-card">
                         <div class="vtc-content">
                             <div class="vtc-logo">
-                                <!-- Placeholder logo -->
-                                <div style="display: flex; align-items: center; gap: 10px;">
-                                    <h3
-                                        style="font-family: 'Mona Sans', sans-serif; font-size: 32px; font-weight: 800; color: #3b82f6; margin: 0; line-height: 1; letter-spacing: -2px;">
-                                        M<span style="color: #cbd5e1;">P</span></h3>
-                                    <span
-                                        style="font-family: 'Mona Sans', sans-serif; font-size: 12px; font-weight: 700; color: #3b82f6; line-height: 1.2;">MY<br>PLUMBING<br>SERVICES</span>
-                                </div>
+                                <img src="./assets/images/carlogo3.png" alt="My Plumbing Services Logo"
+                                    style=" width: auto; object-fit: contain;">
                             </div>
                             <p class="vtc-quote">
-                                "We'd hit a plateau relying on word of <strong>mouth for 18 years</strong>. Since
+                                "We'd hit a plateau relying on word of <strong>mouth for 19 years</strong>. Since
                                 partnering with them, we've doubled our hot <strong>water installations—from 30 to over
                                     60 per month</strong>. The quality of leads is there all the time. People are ready
                                 to buy now, not tire kickers. We've pulled the reins in because it's working too well."
                             </p>
                             <div class="vtc-author">
-                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80"
-                                    alt="Kim Reichert" class="vtc-avatar">
+                                <img src="./assets/images/carduser3.png" alt="Kim Reichert" class="vtc-avatar">
                                 <div class="vtc-author-info">
                                     <h4>Kim Reichert</h4>
                                     <span>My Plumbing Services</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="vtc-video">
-                            <!-- Placeholder video thumbnail mimicking the original -->
-                            <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=600&h=350&q=80"
-                                alt="Video Thumbnail">
-                            <div class="vtc-video-overlay-text">
-                                WE'VE<br>DOUBLED OUR<br><span class="highlight">TURNOVER</span>
-                            </div>
+                        <div class="vtc-video" data-youtube-id="LXb3EKWsInQ">
+                            <img src="./assets/images/vedio-img.png" alt="Video Thumbnail">
                             <div class="play-button"></div>
                         </div>
                     </div>
@@ -731,64 +741,71 @@
              BRAND LOGOS SLIDER SECTION
              ============================================================ -->
         <section class="brand-logos-section" id="brand-logos">
-            <header class="brand-logos-header">
-                <h2>Strong Brand Positioning<br>&amp; Conversion-Focused Design That Drives Real Growth</h2>
-            </header>
+            <div class="brand-logos-header">
+                <h3>Strong Brand Positioning<br>&amp; Conversion-Focused Design That Drives Real Growth</h3>
+            </div>
 
             <!-- Slider 1: Left to Right (requires dir="rtl" for slick to reverse direction) -->
             <div class="logos-slider slider-left-to-right" dir="rtl">
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#0ea5e9;">Jim's</span>&nbsp;<span
-                            style="color:#f97316;">Plumbing</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo1.png" alt="Brand Logo 1"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#10b981;">Castlefield</span>&nbsp;Kindergarten</div>
+                    <div class="logo-box"><img src="./assets/images/logo2.png" alt="Brand Logo 2"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#38bdf8;">Perth Hot Water Man</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo3.png" alt="Brand Logo 3"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#ef4444;">GR Roofing</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo4.png" alt="Brand Logo 4"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#1d4ed8;">XCMG</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo5.png" alt="Brand Logo 5"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#0f172a;">F45</span>&nbsp;Training</div>
+                    <div class="logo-box"><img src="./assets/images/logo6.png" alt="Brand Logo 6"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#10b981;">Safe Planet</span></div>
-                </div>
-                <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#eab308;">Dragon</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo7.png" alt="Brand Logo 7"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
             </div>
 
             <!-- Slider 2: Right to Left (Standard direction) -->
             <div class="logos-slider slider-right-to-left">
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#94a3b8;">Auckland City Painters</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo8.png" alt="Brand Logo 8"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#38bdf8;">Bath &amp; Exterior</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo9.png" alt="Brand Logo 9"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#ef4444;">Back's Electrical</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo10.png" alt="Brand Logo 10"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#2563eb;">Metro Drainage</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo11.png" alt="Brand Logo 11"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#3b82f6;">Procam CCTV</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo12.png" alt="Brand Logo 12"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#10b981;">VOS</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo13.png" alt="Brand Logo 13"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
                 <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#f97316;">Trade Services</span></div>
-                </div>
-                <div class="logo-slide">
-                    <div class="logo-box"><span style="color:#0f172a;">Premium Group</span></div>
+                    <div class="logo-box"><img src="./assets/images/logo14.png" alt="Brand Logo 14"
+                            style="height: 70px; width: auto; object-fit: contain;"></div>
                 </div>
             </div>
         </section>
@@ -797,7 +814,7 @@
              FOUNDERS MESSAGE SECTION
              ============================================================ -->
         <section class="founders-message-section" id="founders">
-            <div class="founders-container">
+            <div class="section-container">
                 <div class="founders-card">
                     <!-- Glow Effects inside the card -->
                     <div class="card-glow glow-blue"></div>
@@ -825,8 +842,8 @@
                         <!-- Right Image Content -->
                         <div class="founders-image-content">
                             <!-- Using a placeholder image for the founders. In production, replace with a transparent PNG of the founders -->
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
-                                alt="Alex and Tom, Co-Founders of UpRank" class="founders-photo">
+                            <img src="./assets/images/founders.png" alt="Alex and Tom, Co-Founders of UpRank"
+                                class="founders-photo">
                         </div>
                     </div>
                 </div>
@@ -837,7 +854,7 @@
              PRICING SECTION
              ============================================================ -->
         <section class="pricing-section" id="pricing">
-            <div class="pricing-container">
+            <div class="section-container">
                 <!-- Heading -->
                 <header class="pricing-header">
                     <h2 class="trade-services-heading">
@@ -862,15 +879,21 @@
                         <div class="pricing-bottom-box">
                             <h4 class="features-title">WHAT'S INCLUDED?</h4>
                             <ul class="features-list list-blue">
-                                <li><i class="fa-solid fa-circle-check"></i> Professionally built website, fully branded
+                                <li><img src="./assets/images/blue-check.png" alt="check" class="check-icon">
+                                    Professionally built website, fully branded
                                     to your business</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Google Business Profile fully optimised
+                                <li><img src="./assets/images/blue-check.png" alt="check" class="check-icon"> Google
+                                    Business Profile fully optimised
                                     &amp; managed</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Your suburb presence actively managed and
+                                <li><img src="./assets/images/blue-check.png" alt="check" class="check-icon"> Your
+                                    suburb presence actively managed and
                                     improved every month</li>
-                                <li><i class="fa-solid fa-circle-check"></i> AI search visibility</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Monthly performance reporting</li>
-                                <li><i class="fa-solid fa-circle-check"></i> No lock in</li>
+                                <li><img src="./assets/images/blue-check.png" alt="check" class="check-icon"> AI search
+                                    visibility</li>
+                                <li><img src="./assets/images/blue-check.png" alt="check" class="check-icon"> Monthly
+                                    performance reporting</li>
+                                <li><img src="./assets/images/blue-check.png" alt="check" class="check-icon"> No lock in
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -888,17 +911,24 @@
                         <div class="pricing-bottom-box">
                             <h4 class="features-title">WHAT'S INCLUDED?</h4>
                             <ul class="features-list list-gold">
-                                <li><i class="fa-solid fa-circle-check"></i> Fully bespoke custom website built around
+                                <li><img src="./assets/images/yellow-check.png" alt="check" class="check-icon"> Fully
+                                    bespoke custom website built around
                                     your brand</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Google Business Profile fully optimised
+                                <li><img src="./assets/images/yellow-check.png" alt="check" class="check-icon"> Google
+                                    Business Profile fully optimised
                                     &amp; managed</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Your suburb presence actively managed and
+                                <li><img src="./assets/images/yellow-check.png" alt="check" class="check-icon"> Your
+                                    suburb presence actively managed and
                                     improved every month</li>
-                                <li><i class="fa-solid fa-circle-check"></i> AI search visibility</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Pin Maxxing strategy - built to expand your
+                                <li><img src="./assets/images/yellow-check.png" alt="check" class="check-icon"> AI
+                                    search visibility</li>
+                                <li><img src="./assets/images/yellow-check.png" alt="check" class="check-icon"> Pin
+                                    Maxxing strategy - built to expand your
                                     reach across your full service area</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Monthly performance reporting</li>
-                                <li><i class="fa-solid fa-circle-check"></i> No lock in</li>
+                                <li><img src="./assets/images/yellow-check.png" alt="check" class="check-icon"> Monthly
+                                    performance reporting</li>
+                                <li><img src="./assets/images/yellow-check.png" alt="check" class="check-icon"> No lock
+                                    in</li>
                             </ul>
                         </div>
                     </div>
@@ -906,15 +936,12 @@
                 </div>
 
                 <!-- Expansion CTA -->
-                <div class="pricing-expansion-cta">
+                <div class="pricing-expansion-cta white-btn">
                     <p>Additional suburb expansion available from <strong>$597/month per location</strong></p>
-                    <a href="#contact" class="btn btn-everything-cta btn-pricing-cta">
+                    <a href="#contact" class="btn btn-hero-cta" id="hero-cta-btn">
                         <span class="btn-text">Get in Touch with the Team</span>
                         <div class="btn-avatars">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80"
-                                alt="Team member" class="avatar avatar-1">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80"
-                                alt="Team member" class="avatar avatar-2">
+                            <img src="./assets/images/btn-user.png" alt="Team members" class="btn-users-img">
                         </div>
                     </a>
                 </div>
@@ -935,69 +962,147 @@
                 </header>
 
                 <div class="social-links-wrapper">
-                    <a href="#" class="social-pill">
+                    <a href="#" class="social-pill active">
                         <div class="social-pill-icon">
-                            <div class="sp-blue-circle"></div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-                                alt="Instagram" class="sp-icon-img">
+                            <img src="./assets/images/socail-logo.png" alt="UpRank Logo" class="sp-logo-img">
+                            <img src="./assets/images/insta.png" alt="Instagram" class="sp-icon-img">
                         </div>
                         <div class="social-pill-text">
                             <span class="sp-action">Follow on Instagram</span>
                             <span class="sp-handle">@uprank.au</span>
                         </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square sp-arrow"></i>
+                        <img src="./assets/images/ArrowUpRight.svg" alt="Arrow Right" class="sp-arrow-img">
                     </a>
 
                     <a href="#" class="social-pill">
                         <div class="social-pill-icon">
-                            <div class="sp-blue-circle"></div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
-                                alt="Spotify" class="sp-icon-img">
+                            <img src="./assets/images/socail-logo.png" alt="UpRank Logo" class="sp-logo-img">
+                            <img src="./assets/images/spotify.png" alt="Spotify" class="sp-icon-img">
                         </div>
                         <div class="social-pill-text">
                             <span class="sp-action">Listen on Spotify</span>
                             <span class="sp-handle">@uprank.au</span>
                         </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square sp-arrow"></i>
+                        <img src="./assets/images/ArrowUpRight.svg" alt="Arrow Right" class="sp-arrow-img">
                     </a>
                 </div>
             </div>
 
             <!-- Social Slider -->
             <div class="social-slider">
-                <!-- Using Unsplash placeholders for the social media posts -->
                 <div class="social-slide">
-                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=500&h=625&q=80"
-                        alt="Instagram Post 1">
+                    <img src="./assets/images/social1.png" alt="Instagram Post 1">
                 </div>
                 <div class="social-slide">
-                    <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=500&h=625&q=80"
-                        alt="Instagram Post 2">
+                    <img src="./assets/images/social2.png" alt="Instagram Post 2">
                 </div>
                 <div class="social-slide">
-                    <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?auto=format&fit=crop&w=500&h=625&q=80"
-                        alt="Instagram Post 3">
+                    <img src="./assets/images/social3.png" alt="Instagram Post 3">
                 </div>
                 <div class="social-slide">
-                    <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=500&h=625&q=80"
-                        alt="Instagram Post 4">
+                    <img src="./assets/images/social4.png" alt="Instagram Post 4">
                 </div>
                 <div class="social-slide">
-                    <img src="https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&w=500&h=625&q=80"
-                        alt="Instagram Post 5">
+                    <img src="./assets/images/social5.png" alt="Instagram Post 5">
                 </div>
                 <div class="social-slide">
-                    <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=500&h=625&q=80"
-                        alt="Instagram Post 6">
+                    <img src="./assets/images/social5.png" alt="Instagram Post 5">
                 </div>
                 <div class="social-slide">
-                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=500&h=625&q=80"
-                        alt="Instagram Post 7">
+                    <img src="./assets/images/social4.png" alt="Instagram Post 4">
                 </div>
             </div>
         </section>
 
     </main>
+
+    <!-- ============================================================
+         MAIN FOOTER
+         ============================================================ -->
+    <footer class="main-footer">
+        <!-- CTA Card Section -->
+        <div class="footer-cta-wrapper section-container">
+            <div class="footer-cta-card">
+                <div class="cta-content">
+                    <h4><span class="lets">LET'S</span> <span class="talk">Talk</span></h4>
+                    <p class="cta-desc">Design done right and fast by people you can trust.</p>
+                    <div class="cta-btn-wrapper">
+                        <a href="#contact" class="footer-btn-cta">
+                            <span class="btn-text">Get in Touch with the Team</span>
+                            <div class="btn-avatars">
+                                <img src="./assets/images/btn-user.png" alt="Users">
+                            </div>
+                        </a>
+                    </div>
+                    <p class="cta-subtext">*We also get booked fast <span class="fire-icon">🔥</span></p>
+                </div>
+                <div class="cta-image">
+                    <div class="cta-glow cta-glow-orange"></div>
+                    <div class="cta-glow cta-glow-blue"></div>
+                    <img src="./assets/images/footer-mob.png" alt="Mobile Phones">
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-main-bg">
+            <div class="section-container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="./assets/images/logo.svg" alt="UpRank">
+                    </div>
+                    <p class="footer-about">UpRank is a trade-focused growth agency that specialises in helping
+                        businesses own their suburb.</p>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Google Ads</a></li>
+                            <li><a href="#">Lead Generation</a></li>
+                            <li><a href="#">Website Design</a></li>
+                            <li><a href="#">Search Engine Optimisation</a></li>
+                            <li><a href="#">CRO & Landing Page</a></li>
+                            <li><a href="#">Meta Ads</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-col-subscribe">
+                        <h4 class="subscribe-title">If you didn't find the products you are interested in or have
+                            questions?</h4>
+                        <p class="subscribe-desc">Just send us your contact email and we will contact you.</p>
+                        <form class="subscribe-form">
+                            <div class="input-wrapper">
+                                <label for="email">YOUR EMAIL</label>
+                                <input type="email" id="email" placeholder="example@gmail.com">
+                                <button type="submit" class="submit-btn"><i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="fb-left">© UpRank.au. All rights reserved.</div>
+                    <div class="fb-right">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Condition</a>
+                    </div>
+                </div>
+
+                <div class="footer-huge-text">UpRank</div>
+            </div>
+        </div>
+    </footer>
 
     <!-- jQuery and Slick Slider JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1006,6 +1111,47 @@
 
     <!-- Custom Script file -->
     <script src="./assets/js/script.js"></script>
+
+    <!-- YouTube Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="close-video-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="youtubeIframe" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const videoCards = document.querySelectorAll('.vtc-video');
+            const modal = document.getElementById('videoModal');
+            const iframe = document.getElementById('youtubeIframe');
+            const closeBtn = document.querySelector('.close-video-modal');
+
+            videoCards.forEach(card => {
+                card.addEventListener('click', function () {
+                    const videoId = this.getAttribute('data-youtube-id') || 'dQw4w9WgXcQ';
+                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                    modal.classList.add('active');
+                });
+            });
+
+            closeBtn.addEventListener('click', function () {
+                modal.classList.remove('active');
+                iframe.src = '';
+            });
+
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    iframe.src = '';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -33,6 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mobileMenuTrigger.addEventListener('click', toggleMobileMenu);
 
+    const mobileCloseBtn = document.getElementById('mobile-close-btn');
+    if (mobileCloseBtn) {
+        mobileCloseBtn.addEventListener('click', () => {
+            mobileMenuTrigger.classList.remove('active');
+            mobileNav.classList.remove('active');
+            body.classList.remove('no-scroll');
+        });
+    }
+
     // Close mobile nav when clicking a link
     const mobileLinks = document.querySelectorAll('.mobile-nav-link');
     mobileLinks.forEach(link => {
@@ -203,6 +212,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    /* HERO MOBILE SLIDER */
+    if ($('.hero-mobile-slider').length) {
+        $('.hero-mobile-slider').slick({
+            speed: 5000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            swipeToSlide: true,
+            centerMode: true,
+            focusOnSelect: false,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: { slidesToShow: 5 }
+                },
+                {
+                    breakpoint: 480,
+                    settings: { slidesToShow: 2.1 }
+                }
+            ]
+        });
+    }
+
     /* 6. SUCCESS STORIES SLIDER (SLICK SLIDER) */
     const storiesSlider = $('.stories-slider');
 
@@ -356,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 breakpoint: 600,
-                settings: { slidesToShow: 2 }
+                settings: { slidesToShow: 1.2 }
             }
         ]
     });
